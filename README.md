@@ -29,7 +29,7 @@ To train models run the following commands:<br/>
 ```$ python train.py --fold 4```<br/>
 #### Metrics Visualization
 To monitor metrics in Tensorboard run:</br>
-```tensorboard --logdir pn_logs --port=2222```
+```tensorboard --logdir pn_logs```
 #### Flags
 - `--gpus`: IDs of GPUs to train on.
 - `--train_batch_size`: Batch size of train loader.
