@@ -1,6 +1,6 @@
 # Pneumothorax Segmentation in Chest X-ray Images
 
-This is code for my part of solution of my team for [SIIM-ACR Pneumothorax Segmentation](https://www.kaggle.com/c/siim-acr-pneumothorax-segmentation), where we ranked 50/1475 and got a silver medal. My part of solution itself ranks in the silver range.
+This is code for my part of the solution of my team for [SIIM-ACR Pneumothorax Segmentation](https://www.kaggle.com/c/siim-acr-pneumothorax-segmentation), where we ranked 50/1475 and got a silver medal. My part of the solution itself ranks in the silver range.
 
 ## Data Structure
 Download [data](https://www.kaggle.com/iafoss/siimacr-pneumothorax-segmentation-data-1024) and put it in ```size1024``` directory.
@@ -51,5 +51,8 @@ To convert weight files from PyTorch Lightning to vanilla Pytorch run the follow
 - `--num_workers`: Number of workers of test loader. 
 
 You can [upload the result to Kaggle](https://www.kaggle.com/c/siim-acr-pneumothorax-segmentation/submissions) for scoring either manually or do it through a Kaggle API (registered account is required):
-~~~
-$  kaggle competitions submit -c siim-acr-pneumothorax-segmentation -f subs/submission.scv -m "my submission"
+
+```$  kaggle competitions submit -c siim-acr-pneumothorax-segmentation -f subs/submission.scv -m "my submission"```
+This competition was evaluated on the mean Dice coefficient.
+Public Leaderboard: 0.8950 
+Private Leaderboard: 0.8461
