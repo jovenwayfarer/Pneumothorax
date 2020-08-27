@@ -142,7 +142,7 @@ def main(args):
             r = run_length_encode(predict)
             encoded_pixels.append(r)
     df['EncodedPixels'] = encoded_pixels
-    df.to_csv('subs/5fold_ensemble_0.75_10000.csv', columns=['ImageId', 'EncodedPixels'], index=False)
+    df.to_csv('subs/5fold_ensemble.csv', columns=['ImageId', 'EncodedPixels'], index=False)
 
 
 if __name__ == '__main__':
