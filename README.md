@@ -21,7 +21,7 @@ To train models run the following commands:<br/>
 - `--img_size`: Image size.
 - `--num_worker`: Positive integer will turn on multi-process data loading with the specified number of loader worker processes (Check PyTorch [docs](https://pytorch.org/docs/stable/data.html)).
 ## Weights preparation
-To convert weight files from PyTorch Lightning to vanilla Pytorch run the following command.
+To convert weight files from PyTorch Lightning to vanilla Pytorch run the following command.<br/>
 ```$ python convert.py```
 ## Inference 
 ```$ python inference_ensemble.py```
