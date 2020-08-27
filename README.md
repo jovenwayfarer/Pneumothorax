@@ -52,7 +52,7 @@ To convert weight files from PyTorch Lightning to vanilla Pytorch run the follow
 
 You can [upload the result to Kaggle](https://www.kaggle.com/c/siim-acr-pneumothorax-segmentation/submissions) for scoring either manually or do it through a Kaggle API (registered account is required):
 
-```$  kaggle competitions submit -c siim-acr-pneumothorax-segmentation -f subs/submission.scv -m "my submission"```
-This competition was evaluated on the mean Dice coefficient.
-Public Leaderboard: 0.8950 
-Private Leaderboard: 0.8461
+```$  kaggle competitions submit -c siim-acr-pneumothorax-segmentation -f subs/submission.scv -m "my submission"```</br>
+This competition was evaluated on the mean Dice coefficient.</br>
+Public Leaderboard: 0.8950 </br>
+Private Leaderboard: 0.8461</br>
