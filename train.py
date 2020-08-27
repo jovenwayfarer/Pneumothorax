@@ -24,7 +24,7 @@ def seed_everything(seed):
     torch.backends.cudnn.benchmark = False
 
 
-#https://www.kaggle.com/iafoss/siimacr-pneumothorax-segmentation-data-1024
+
 train_rle_path = 'labels/stage_2_train.csv'
 train_image_folder = "size1024/train/train"
 train_mask_folder = "size1024/masks"
@@ -59,17 +59,11 @@ class Pneumothorax(pl.LightningModule):
 
         return x
 
-    # @lru_cache(maxsize=None)
-    # def len_train_dl(self):
-	#     return len(self.train_dataloader())
-
     def configure_optimizers(self):
 
         optimizer = torch.optim.Adam(self.parameters(), lr=self.hparams.lr)
         scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode="min", patience=3, verbose=True, factor=0.1)
-        # scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr=self.hparams.lr, steps_per_epoch=self.len_train_dl(), 
-		# 												epochs=self.hparams.epochs, pct_start=0.0, base_momentum=0.85, 
-		# 												max_momentum=0.95, div_factor=100.0, final_div_factor=1e4)
+ 								max_momentum=0.95, div_factor=100.0, final_div_factor=1e4)
 
         scheduler = {'scheduler': scheduler, 'interval' : 'epoch'}
 
