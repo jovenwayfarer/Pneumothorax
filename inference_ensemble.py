@@ -94,8 +94,8 @@ def main(args):
     size = 1024
     mean = (0.485, 0.456, 0.406)
     std = (0.229, 0.224, 0.225)
-    best_threshold = 0.75
-    min_size = 10000
+    best_threshold = 0.65
+    min_size = 3500
     device = torch.device('cuda:{}'.format(args.gpu))
     df = pd.read_csv(sample_submission_path)
     testset = DataLoader(
