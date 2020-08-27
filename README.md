@@ -7,11 +7,11 @@ Download [data](https://www.kaggle.com/iafoss/siimacr-pneumothorax-segmentation-
 
 ## Train
 To train models run the following commands:
-```$ python train.py --fold 0```
-```$ python train.py --fold 1```
-```$ python train.py --fold 2```
-```$ python train.py --fold 3```
-```$ python train.py --fold 4```
+```$ python train.py --fold 0```<br/>
+```$ python train.py --fold 1```<br/>
+```$ python train.py --fold 2```<br/>
+```$ python train.py --fold 3```<br/>
+```$ python train.py --fold 4```<br/>
 #### Flags
 - `--gpus`: IDs of GPUs to train on.
 - `--train_batch_size`: Batch size of train loader.
