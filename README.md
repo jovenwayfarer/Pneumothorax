@@ -27,6 +27,8 @@ To train models run the following commands:<br/>
 ```$ python train.py --fold 2```<br/>
 ```$ python train.py --fold 3```<br/>
 ```$ python train.py --fold 4```<br/>
+To monitor metrics in Tensorboard run:</br>
+```tensorboard --logdir pn_logs --port=2222```
 #### Flags
 - `--gpus`: IDs of GPUs to train on.
 - `--train_batch_size`: Batch size of train loader.
@@ -35,8 +37,7 @@ To train models run the following commands:<br/>
 - `--lr`: Learning rate.
 - `--img_size`: Image size.
 - `--num_worker`: Positive integer will turn on multi-process data loading with the specified number of loader worker processes (Check PyTorch [docs](https://pytorch.org/docs/stable/data.html)).
-To monitor metrics in Tensorboard run:</br>
-```tensorboard --logdir pn_logs --port=2222```
+
 ## Weights preparation
 To convert weight files from PyTorch Lightning to vanilla Pytorch run the following command.<br/>
 ```$ python convert.py```
