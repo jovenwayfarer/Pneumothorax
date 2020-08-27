@@ -86,7 +86,7 @@ def update_state_dict(state_dict):
 
 def main(args):  
     
-    path_models = glob.glob('pth_weights/*.pth')
+    path_models = glob.glob('weights/*.pth')
 
     sample_submission_path = 'labels/stage_2_sample_submission.csv'
     test_data_folder = 'size1024/test'
