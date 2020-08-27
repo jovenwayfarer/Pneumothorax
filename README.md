@@ -6,7 +6,7 @@ This is code for my part of solution of my team for [SIIM-ACR Pneumothorax Segme
 Download [data](https://www.kaggle.com/iafoss/siimacr-pneumothorax-segmentation-data-1024) and put it in ```size1024``` directory.
 
 ## Train
-To train models run the following commands:
+To train models run the following commands:<br/>
 ```$ python train.py --fold 0```<br/>
 ```$ python train.py --fold 1```<br/>
 ```$ python train.py --fold 2```<br/>
