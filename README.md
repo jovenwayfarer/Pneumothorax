@@ -47,7 +47,6 @@ To convert weight files from PyTorch Lightning to vanilla Pytorch run the follow
 #### Flags
 - `--gpu`: ID of GPU to inference on.
 - `--batch_size`: Batch size of test loader.
-- `--epochs`: Number of epochs to train the model.
 - `--num_workers`: Number of workers of test loader. 
 
 You can [upload the result to Kaggle](https://www.kaggle.com/c/siim-acr-pneumothorax-segmentation/submissions) for scoring either manually or do it through a Kaggle API (registered account is required):
