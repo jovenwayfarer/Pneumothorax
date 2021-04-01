@@ -62,7 +62,7 @@ class Pneumothorax(pl.LightningModule):
     def configure_optimizers(self):
 
         optimizer = torch.optim.Adam(self.parameters(), lr=self.hparams.lr)
-        scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode="min", patience=3, verbose=True, factor=0.1)
+        scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode="min", patience=3, verbose=True, factor=0.1,
  								max_momentum=0.95, div_factor=100.0, final_div_factor=1e4)
 
         scheduler = {'scheduler': scheduler, 'interval' : 'epoch'}
