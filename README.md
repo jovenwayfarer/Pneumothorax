@@ -1,6 +1,6 @@
 # Pneumothorax Segmentation in Chest X-ray Images
 
-This is code for my part of the solution of my team for [SIIM-ACR Pneumothorax Segmentation](https://www.kaggle.com/c/siim-acr-pneumothorax-segmentation), where we ranked 50/1475 and got a silver medal. My part of the solution itself ranks in the silver range.
+This code is my part of the solution of my team for [SIIM-ACR Pneumothorax Segmentation](https://www.kaggle.com/c/siim-acr-pneumothorax-segmentation), where we ranked 50/1475 and got a silver medal. My part of the solution itself ranks in the silver range.
 
 ## Data Structure
 Download [data](https://www.kaggle.com/iafoss/siimacr-pneumothorax-segmentation-data-1024) and put it in ```size1024``` directory.
